@@ -95,7 +95,7 @@ To log in to JUWELS follow [Login](https://apps.fz-juelich.de/jsc/hps/juwels/acc
 
 ### 1: Environment Configuration 
 
-The [Environment Setup Guide](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_environment/#basic-workflow) covers the basic workflow. Example of modules.sh can be seen below
+The [Environment Setup Guide](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_environment/) covers the basic workflow. Example of modules.sh can be seen below
 
 ```bash
 module purge
