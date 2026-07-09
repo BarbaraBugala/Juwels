@@ -169,7 +169,7 @@ The `ddp_training` file mentioned in the documentation can be accessed here: [dd
 
 ---
 
-## List of the Most Useful Commands 
+## List of the Most Useful Commands :)
 
 | Action | Command |
 | :--- | :--- |
