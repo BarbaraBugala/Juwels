@@ -9,14 +9,14 @@ This guide summarizes information from various JSC resources including:
 
 ### 1: Create a JuDoor Account 
 
-Your first step is to register on the [JuDoor portal](https://judoor.fz-juelich.de/), the central management system for JSC accounts. When registering, ensure you use your **official Helmholtz email address! **
+Your first step is to register on the [JuDoor portal](https://judoor.fz-juelich.de/), the central management system for JSC accounts. When registering, ensure you use your **official Helmholtz email address!**
 
 For a detailed walkthrough, you can refer to the [Setup Website](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_ssh/#uploading-and-managing-ssh-keys-on-juelich-hpc-systems) or watch this [01_Register_for_new_JSC-Account.mp4](https://drive.google.com/file/d/1-DfiNBP4Gta0av4lQmubkXIXzr2FW4a-/view) video.
 
 You can also follow the screenshots pasted below:
 
-![Registration](register_1.png)
-![Registration2](register_2.png)
+![Registration](images/register_1.png)
+![Registration2](images/register_2.png)
 
 
 ### 2: Configure Multi-Factor Authentication (MFA) 
@@ -27,7 +27,7 @@ To secure your access, JUWELS requires Multi-Factor Authentication. You will nee
 
 Computing resources on JUWELS are allocated through projects. If you are joining an existing team, you must request to be added to their computing time project via the [JuDoor portal](https://judoor.fz-juelich.de/). Review the guide on [how to join a project](https://www.fz-juelich.de/en/ias/jsc/services/user-support/how-to-get-access-to-systems/judoor) for specific steps.
 
-![Joining Project](joining_project.png)
+![Joining Project](images/joining_project.png)
 
 
 *Note: Once your membership is approved, you must sign the usage agreements. This [video](https://drive.google.com/file/d/1mEN1GmWyGFp75uMIi4d6Tpek2NC_X8eY/view) demonstrates the signing process.*
@@ -44,24 +44,24 @@ Refer to the [SSH Login Guide](https://apps.fz-juelich.de/jsc/hps/juwels/access.
 
 * **Important:** When uploading your key in JuDoor, click the "Manage SSH-keys" button specifically for the JUWELS system.
 
-![Manage SSH](manage_ssh.png)
+![Manage SSH](images/manage_ssh.png)
 
 * You may be prompted for your TOTP code again to authorize this change.
 * JuDoor will also tell you the range of IP addresses from which you will be able to access the system. These IP addresses are typically pasted into your local SSH configuration file.
 
-![IP](ip.png)
-![Options](options.png)
+![IP](images/ip.png)
+![Options](images/options.png)
 
 In more complicated cases, consult the documentation, the part about “from clauses” states:
 
-![from clause](from_clause.png)
+![from clause](images/from_clause.png)
 
 ### 2: Logging in to JUWELS 
 
 Once your keys are configured, you can log in using the terminal. To avoid entering your credentials repeatedly, follow this guide to [simplify your SSH connection](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_ssh/#openssh-persistent-configuration) using a persistent configuration file.
 
-![Login](login.png)
-![SSH Key](ssh_key.png)
+![Login](images/login.png)
+![SSH Key](images/ssh_key.png)
 
 ## Basic Setup and Usage 
 
