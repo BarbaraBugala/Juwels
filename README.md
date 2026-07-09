@@ -15,6 +15,9 @@ For a detailed walkthrough, you can refer to the [Setup Website](https://sdlaml.
 
 You can also follow the screenshots pasted below:
 
+![Registration](register_1.png)
+![Registration2](register_2.png)
+
 
 ### 2: Configure Multi-Factor Authentication (MFA) 
 
@@ -40,10 +43,17 @@ The primary method for interacting with JUWELS is via SSH. You must generate an 
 Refer to the [SSH Login Guide](https://apps.fz-juelich.de/jsc/hps/juwels/access.html#ssh-login) for a step-by-step technical walkthrough.
 
 * **Important:** When uploading your key in JuDoor, click the "Manage SSH-keys" button specifically for the JUWELS system.
+
+![Manage SSH](manage_ssh.png)
+
 * You may be prompted for your TOTP code again to authorize this change.
 * JuDoor will also tell you the range of IP addresses from which you will be able to access the system. These IP addresses are typically pasted into your local SSH configuration file.
 
+![IP](ip.png)
+![Options](options.png)
+
 In more complicated cases, consult the documentation, the part about “from clauses” states:
+
 ![from clause](from_clause.png)
 
 ### 2: Logging in to JUWELS 
@@ -57,7 +67,17 @@ Once your keys are configured, you can log in using the terminal. To avoid enter
 
 ### 1: Environment Configuration 
 
-The [Environment Setup Guide](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_environment/#basic-workflow) covers the basic workflow. Use the module system to manage software packages: 
+The [Environment Setup Guide](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_environment/#basic-workflow) covers the basic workflow. Example of modules.sh can be seen below
+
+```bash
+module purge
+module load Stager/2026
+module load GCC
+module load PyTorch/2.9.1
+module load SciPy-bundle/2025.07
+```
+
+Use the module system to manage software packages: 
 
 * Use `module spider [package]` to search for available software.
 * Use `module load [package]` to activate a specific version.
