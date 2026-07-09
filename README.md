@@ -52,9 +52,24 @@ Refer to the [SSH Login Guide](https://apps.fz-juelich.de/jsc/hps/juwels/access.
 ![IP](images/ip.png)
 ![Options](images/options.png)
 
-In more complicated cases, consult the documentation, the part about “from clauses” states:
+In more complicated cases, consult the documentation, the part about [“from clauses”](https://apps.fz-juelich.de/jsc/hps/juwels/access.html#key-upload-key-restriction) states:
 
-![from clause](images/from_clause.png)
+> The content of the `from` clause, the `192.0.2.42` in the example above, is a comma-separated list of IP addresses or hostnames, which can also include partial patterns. If one of the patterns match, access to the system is granted. The following options for patterns are possible:
+> 
+> * A literal IP address, like `192.0.2.42` (IPv4) or `2001:db8::2a` (IPv6)
+> * A literal hostname, like `host.example.com`
+> * An IP address or hostname with wildcard operators, like `*.example.com`
+> * An IP address range in CIDR notation, like `192.51.100.0/24` (IPv4) or `2001:db8:4815:1623::/64` (IPv6)
+> 
+> > **Note** > > JUWELS can only be reached via IPv4.
+> 
+> An example of a combination of the patterns:
+> 
+> ```text
+> from="2001:db8::2a,192.51.100.0/24,*.fz-juelich.de" ssh-ed25519 AAAAC3N...
+> ```
+> 
+> It would allow a specific IP address (`2001:db8::2a`), would allow an entire subnet (`192.51.100.1` to `192.51.100.254`), and additionally allow connections from hostnames ending on `.fz-juelich.de`.
 
 ### 2: Logging in to JUWELS 
 
