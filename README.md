@@ -61,7 +61,7 @@ In more complicated cases, consult the documentation, the part about “from cla
 Once your keys are configured, you can log in using the terminal. To avoid entering your credentials repeatedly, follow this guide to [simplify your SSH connection](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/setup_ssh/#openssh-persistent-configuration) using a persistent configuration file.
 
 
-The documentation states: 
+To log in to JUWELS follow [Login](https://apps.fz-juelich.de/jsc/hps/juwels/access.html#logging-in-to-system-name). The documentation states: 
 
 > To login to JUWELS, please use
 > 
@@ -72,7 +72,7 @@ The documentation states:
 > 
 > for the Cluster and Booster login nodes, respectively.
 
-> `<yourid>` is your user id at JSC (e.g. `mustermann1`). You will be prompted for the passphrase of the ssh key which is the one you entered when you generated the key (see above). With your first connection to the HPC system, you will also be asked to check the *host key fingerprint* of the system you log in to. This fingerprint is displayed in JuDoor next to the form you use to upload your public key. Please compare the host key fingerprint from JuDoor to the one printed during your first login! Only if both are identical, proceed to connect to the system. 
+> `<yourid>` is your user id at JSC (e.g. `mustermann1`). You will be prompted for the passphrase of the ssh key which is the one you entered when you generated the key (see above). With your first connection to the HPC system, you will also be asked to check the host key fingerprint of the system you log in to. This fingerprint is displayed in JuDoor next to the form you use to upload your public key. Please compare the host key fingerprint from JuDoor to the one printed during your first login! Only if both are identical, proceed to connect to the system.
 > 
 > If they don't match, please inform JSC via sc@fz-juelich.de
 
