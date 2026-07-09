@@ -86,7 +86,7 @@ For more details on managing software stacks, see [Basic Module Usage](https://a
 
 ### 2: Storage Management 
 
-* **Important:** Your `HOME` directory has a very limited quota and is not intended for heavy computation. Move your data and scripts to the [PROJECT directory](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/jsc_basics/#basic-setup-and-usage) before running jobs.
+**Important:** Your `HOME` directory has a very limited quota and is not intended for heavy computation. Move your data and scripts to the [PROJECT directory](https://sdlaml.pages.jsc.fz-juelich.de/ai/guides/jsc_basics/#basic-setup-and-usage) before running jobs.
 
 ### 3: VSCode Integration 
 
